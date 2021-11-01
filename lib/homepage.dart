@@ -10,7 +10,7 @@ class homepage extends StatelessWidget {
     String name  = "Krish Athreyan";
     const appName = "Sample Application";
     return MaterialApp(
-      home: Scaffold(
+      home: Scaffold(  //New interface
         appBar: AppBar(
           title: Text(appName),
         ),
