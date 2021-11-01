@@ -14,7 +14,7 @@ class homepage extends StatelessWidget {
         appBar: AppBar( //Header
           title: Text(appName),
         ),
-        body:Center(
+        body:Center( //Body
             child: Container(
               child: Text("Hey! This is my ${num}st mobile application!\nMy name is $name!"),
             )
