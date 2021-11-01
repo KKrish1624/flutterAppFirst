@@ -11,7 +11,7 @@ class homepage extends StatelessWidget {
     const appName = "Sample Application";
     return MaterialApp(
       home: Scaffold(  //New interface
-        appBar: AppBar(
+        appBar: AppBar( //Header
           title: Text(appName),
         ),
         body:Center(
