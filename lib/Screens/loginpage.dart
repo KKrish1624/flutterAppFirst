@@ -34,7 +34,7 @@ class LoginPage extends StatelessWidget {
 
               //Fitting of the Image
               fit: BoxFit.cover ),
-
+              //Creates an empty box, which will give space
               const SizedBox(
                 height: 20.0,
               ),
@@ -44,9 +44,51 @@ class LoginPage extends StatelessWidget {
                 fontSize: 25,
                 fontWeight: FontWeight.bold
               ),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              Column(
+               children: [
+                 Padding(
+                   padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32.0),
+                   child: Column(
+                     children: [
+                       TextFormField(
+                         decoration: const InputDecoration(
+                           hintText: "Enter Email",
+                           labelText: "Email",
+                         ),
+                       ),
+
+
+                       TextFormField(
+                         obscureText: true,
+                         decoration: const InputDecoration(
+                           hintText: "Enter Password",
+                           labelText: "Password",
+                         ),
+                       ),
+                       const SizedBox(
+                         height: 20.0,
+                       ),
+
+                       ElevatedButton(
+                           onPressed: () {
+                             print("Logged in!");
+                           },
+                           //style: TextButton.styleFrom(),
+                           child: const Text("Login")
+                       )
+                     ],
+
+                   ),
+                 )
+               ], 
               )
             ],
           ),
+
       );
   }
 }
