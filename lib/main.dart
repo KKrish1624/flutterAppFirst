@@ -4,6 +4,8 @@ import 'package:flutter_application_2/Utils/routes.dart';
 import 'Screens/loginpage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'Screens/registerpage.dart';
+
 void main(){
   runApp(const MyApp());
 
@@ -43,12 +45,13 @@ class MyApp extends StatelessWidget {
       //   brightness: Brightness.dark,
       // ),
 
-        initialRoute: MyRoutes.loginRoute,
+        initialRoute: MyRoutes.registerRoute,
 
       routes: {
         //Home Route - Default
         MyRoutes.homeRoute: (context) => const HomePage(),
         MyRoutes.loginRoute: (context) => const LoginPage(),
+        MyRoutes.registerRoute: (context) => const RegisPage(),
     }
 
     );
