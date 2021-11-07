@@ -98,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
 
                  //Provides symmetric padding i.e vertical padding are same and horizontal padding are same.
                  Padding(
-                   padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32.0),
+                   padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
                    child: Form(
                      key: _formKey,
                      child: Column(
@@ -211,6 +211,14 @@ class _LoginPageState extends State<LoginPage> {
                        ],
                      ),
                    ),
+                 ),
+
+                 GestureDetector(
+                     child: const Text("Click here if you haven't registered yet!",
+                         style: TextStyle(decoration: TextDecoration.underline, color: Colors.deepPurple)),
+                     onTap: () {
+                       Navigator.pushNamed(context, MyRoutes.registerRoute);
+                     }
                  )
                ],
               )
